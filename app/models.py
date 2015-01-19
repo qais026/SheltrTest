@@ -4,7 +4,8 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Provider(models.Model):
-	admin = models.ForeignKey(User) # This is what I just typed
+	#removed foriegn key to make it load, doesn't work while this is here
+	#admin = models.ForeignKey(User) # This is what I just typed
 	admin_firstname2 = models.CharField(max_length=45, null=True, blank=True)
 	admin_lastname2 = models.CharField(max_length=45, null=True, blank=True)
 	name = models.CharField(max_length=140)
@@ -19,5 +20,5 @@ class Provider(models.Model):
 	characteristics = models.CharField(max_length=500)
 
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.name
