@@ -1,0 +1,7 @@
+Work log starting 1-22-15
+
+1-22-15
+	-Added Foundation as the UI setup, using all the basics and nothing changed (vanilla CSS)
+	-Added general About us and Contact Us views in Views.py, html's not made
+	Pushed to Git
+	
