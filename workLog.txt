@@ -12,3 +12,4 @@ Work log starting 1-22-15
 	-Use this to make contact us form: http://code.techandstartup.com/django/contact-form/
 	-Using gmail right now (mapithere not info@sheltr)
 	
+Next up: base.html using Foundation
