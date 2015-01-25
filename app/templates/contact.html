@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Form{% endblock %}
+
+{% block content %}
+
+      <h2>Contact Form</h2>
+      <p>To send us a message fill out the below form.</p>
+      
+    {% if errors %}
+        <ul>
+            {% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+  
+    <form action="/contact/" method="post">{% csrf_token %}
+        <p>Subject: <input type="text" name="subject"></p>
+        <p>Your e-mail (optional): <input type="text" name="email"></p>
+        <p>Message: <textarea name="message" rows="10" cols="50"></textarea></p>
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}
