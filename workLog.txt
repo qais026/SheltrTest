@@ -5,3 +5,10 @@ Work log starting 1-22-15
 	-Added general About us and Contact Us views in Views.py, html's not made
 	Pushed to Git
 	
+1-25-14
+	-Added SendGrid to Heroku (free to 400 emails per month)
+		=https://devcenter.heroku.com/articles/sendgrid
+		=Added Qais's credit card to heroku, please don't steal
+	-Use this to make contact us form: http://code.techandstartup.com/django/contact-form/
+	-Using gmail right now (mapithere not info@sheltr)
+	
